@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background: #f0f4f8;
+  padding: 20px;
+}
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* ✅ Canh giữa theo chiều ngang */
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.sidebar h2 {
+ color: #173358;
+  font-size: 120px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 3px solid #173358;
+  padding-bottom: 6px;
+  margin-top: 12px;
+}
+.nav a {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin: 10px 0;
+  color: #173358;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.2s;
+}
+.nav a:hover {
+  background: #dce3ee;
+  border-radius: 6px;
+}
+.nav img {
+  width: 24px;
+  margin-right: 12px;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background: #173358;
+  color: white;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:  30px;
+}
+.logo-block {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 80px;
+  margin-right: 10px;
+}
+.title-block h1 {
+  font-size: 28px;
+}
+.title-block p {
+  font-size: 14px;
+}
+.header-center {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+.admin-block {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.admin-block img {
+  width: 32px;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  overflow: hidden;
+}
+.library-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
